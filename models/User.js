@@ -9,7 +9,7 @@ const userSchema = mongoose.Schema({
         maxlength: 50
     },
     email: {
-        type: Strying,
+        type: String,
         trim: true,         // space 없애주는 역할
         unique: 1
     },
@@ -39,4 +39,4 @@ const User = mongoose.model('User', userSchema)
 
 
 // 모듈 다른곳에서도 사용 가능 
-module.export = {User}
+module.exports = { User }
